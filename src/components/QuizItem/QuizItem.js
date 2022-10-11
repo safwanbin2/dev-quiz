@@ -20,7 +20,7 @@ const QuizItem = ({ quiz }) => {
     }
     return (
         <div className='p-8 border-2 border-accent rounded-md shadow-lg my-8'>
-            <div onClick={handleshowBtn} className='text-end'>
+            <div onClick={handleshowBtn} title='view answer' className='text-end'>
                 <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
             </div>
             <h1 className='text-2xl font-semibold border-b-2 border-accent pb-4'>{question}</h1>
