@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { TopicContext } from '../../layouts/Main';
 
 const Statistic = () => {
+    const data = useContext(TopicContext);
+    console.log(data)
     return (
         <div>
-            this is statistic
+            <h1>Graphical view of total questions</h1>
         </div>
     );
 };

@@ -23,7 +23,7 @@ const QuizItem = ({ quiz }) => {
             <div onClick={handleshowBtn} className='text-end'>
                 <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
             </div>
-            <h1 className='text-2xl font-semibold'>{question}</h1>
+            <h1 className='text-2xl font-semibold border-b-2 border-accent pb-4'>{question}</h1>
             <div className='my-4 font-semibold ml-8'>
                 {options[0] && <div className='flex items-center'>1. <h4 onClick={() => handleSelect(options[0])} className='p-2 rounded cursor-pointer quiz-item'>{options[0]}</h4></div>}
 
