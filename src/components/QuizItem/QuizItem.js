@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const QuizItem = ({ quiz }) => {
     const { correctAnswer, options, question } = quiz;
     const handleshowBtn = () => {
-        toast.success(`The answer is ---${correctAnswer}`, {autoClose: 2000})
+        toast.info(`The answer is --- ${correctAnswer}`, {autoClose: 2000})
     }
     const handleSelect = e => {
         if(e === correctAnswer){
