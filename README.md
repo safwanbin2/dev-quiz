@@ -14,5 +14,5 @@
 # Feature
  1. multiple technology quiz test
  2. toasted result
- 3. chart of total technology and there their total questions
+ 3. chart of total technology and their total questions
  4. blog section might help you gather knowledge about react
