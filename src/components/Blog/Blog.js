@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Blog = () => {
+    // added
     return (
         <div className='w-8/12 mx-auto'>
             <h1 className='border-b-2 border-b-accent pb-4 text-3xl font-semibold text-center my-8'>Frequently Asked Questions (FAQs)</h1>
