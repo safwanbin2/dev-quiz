@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import banner from '../../assets/banner.jpg';
 import { TopicContext } from '../../layouts/Main';
+import Topics from '../Topics/Topics';
 
 const Hero = () => {
     const topics = useContext(TopicContext);
-    console.log(topics)
     return (
         <div>
             <div className='flex  items-center w-11/12 mx-auto my-16'>
@@ -14,9 +14,12 @@ const Hero = () => {
                     <p className='text-xl my-4'>Test The ultimate quiz set by level thee judges.</p>
                 </div>
             </div>
-            <div>
+            <div className='grid md:grid-cols-4 gap-6 w-10/12 mx-auto mt-20 mb-12'>
                 {
-
+                    topics.map(topic => <Topics
+                        key={topic.id}
+                        topic={topic}
+                    ></Topics>)
                 }
             </div>
         </div>

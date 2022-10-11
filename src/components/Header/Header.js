@@ -9,7 +9,6 @@ const Header = () => {
             </div>
             <div className="flex-none">
                 <Link className='text-white mx-6' to='/'>Home</Link>
-                <Link className='text-white mx-6' to='/quiz'>Quiz</Link>
                 <Link className='text-white mx-6' to='/statistic'>Statistics</Link>
                 <Link className='text-white mx-6' to='/blog'>Blog</Link>
             </div>
