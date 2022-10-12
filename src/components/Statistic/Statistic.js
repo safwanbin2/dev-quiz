@@ -4,14 +4,12 @@ import { TopicContext } from '../../layouts/Main';
 
 const Statistic = () => {
     const data = useContext(TopicContext);
-    console.log(data)
-
     return (
         <div className='w-full md:w-8/12 mx-auto'>
             <h1 className='text-center text-3xl font-semibold my-8 border-b-2 border-b-accent pb-4'>Graphical view of total questions</h1>
             <ResponsiveContainer width="95%" height={400}>
                 <AreaChart
-                    className='mx-auto'
+                    className='mx-auto -z-10'
                     data={data}
                     syncId="anyId"
                     margin={{
